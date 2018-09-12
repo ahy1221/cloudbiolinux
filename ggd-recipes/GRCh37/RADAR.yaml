@@ -11,7 +11,7 @@ recipe:
     recipe_type: bash
     recipe_cmds:
       - |
-        url=https://s3.amazonaws.com/biodata/annotation/RADAR/GRCh37/RADAR.bed.gz
+        url=http://s3.amazonaws.com/biodata/annotation/RADAR/GRCh37/RADAR.bed.gz
         mkdir -p editing
         cd editing
         wget --no-check-certificate -q $url

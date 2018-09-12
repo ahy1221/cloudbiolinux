@@ -10,7 +10,7 @@ recipe:
     recipe_type: bash
     recipe_cmds:
       - |
-        wget --no-check-certificate -c https://s3.amazonaws.com/biodata/genomes/GRCh37-seq.tar.gz
+        wget --no-check-certificate -c http://s3.amazonaws.com/biodata/genomes/GRCh37-seq.tar.gz
         tar -xzvpf GRCh37-seq.tar.gz
         gunzip -c seq/GRCh37.fa.gz > seq/GRCh37.fa
         touch seq/GRCh37.fa.fai

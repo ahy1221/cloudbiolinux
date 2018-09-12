@@ -8,7 +8,7 @@ recipe:
     recipe_type: bash
     recipe_cmds:
       - |
-        baseurl=https://s3.amazonaws.com/gemini-annotations
+        baseurl=http://s3.amazonaws.com/gemini-annotations
         url=$baseurl/ESP6500SI.all.snps_indels.tidy.v2.vcf.gz
         mkdir -p variation
         wget -c -O variation/esp.vcf.gz $url

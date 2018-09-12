@@ -10,7 +10,7 @@ recipe:
     recipe_type: bash
     recipe_cmds:
       - |
-        baseurl=https://s3.amazonaws.com/biodata/annotation/GRCh37-rnaseq-2015-12-01.tar.xz
+        baseurl=http://s3.amazonaws.com/biodata/annotation/GRCh37-rnaseq-2015-12-01.tar.xz
         wget -c -N --no-check-certificate $baseurl
         xz -dc *-rnaseq-*.tar.xz | tar --no-same-owner -xpf -
         mv */rnaseq-* rnaseq

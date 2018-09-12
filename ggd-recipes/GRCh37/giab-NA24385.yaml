@@ -18,10 +18,10 @@ recipe:
         wget -c -O $dir/truth_small_variants.vcf.gz $url/$calls
         tabix -f -p vcf $dir/truth_small_variants.vcf.gz
         wget -c -O $dir/truth_regions.bed $url/$regions
-        delurl=https://s3.amazonaws.com/bcbio/giab/NA24385/NA24385-GIAB-2tech-dels-v0_1_8-GRCh37.bed.gz
+        delurl=http://s3.amazonaws.com/bcbio/giab/NA24385/NA24385-GIAB-2tech-dels-v0_1_8-GRCh37.bed.gz
         wget -c -O $dir/truth_DEL_giab.bed.gz $delurl
         wget -c -O $dir/truth_DEL_giab.bed.gz.tbi $delurl.tbi
-        cnvurl=https://s3.amazonaws.com/bcbio/giab/NA24385/NA24385-crowd-dels-GRCh37.bed.gz
+        cnvurl=http://s3.amazonaws.com/bcbio/giab/NA24385/NA24385-crowd-dels-GRCh37.bed.gz
         wget -c -O $dir/truth_DEL_crowd.bed.gz $cnvurl
         wget -c -O $dir/truth_DEL_crowd.bed.gz.tbi $cnvurl.tbi
         svurl=ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/NIST_SVs_Integration_v0.6/HG002_SVs_Tier1_v0.6.vcf.gz
