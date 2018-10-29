@@ -8,7 +8,7 @@ recipe:
     recipe_type: bash
     recipe_cmds:
       - |
-        baseurl=https://raw.githubusercontent.com/AstraZeneca-NGS/reference_data/master/GRCh37/bed
+        baseurl=http://raw.githubusercontent.com/AstraZeneca-NGS/reference_data/master/GRCh37/bed
         files="Exome-Agilent_V5_Clinical.bed Exome-Agilent_V6.bed Exome-AZ_V2.bed Exome-IDT_V1.bed
                Exome-MedExome.bed Exome-NGv3.bed"
         mkdir -p coverage/capture_regions

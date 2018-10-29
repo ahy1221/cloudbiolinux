@@ -15,7 +15,7 @@
 # 4. Run Crossmap:
 # Crossmap.py bed hg19ToHg38.over.chain.gz RADAR-hg19.tmp.bed > conversions.bed
 # 5. Merge original RADAR file with the Crossmap output
-# wget https://raw.githubusercontent.com/roryk/seqscripts/master/radar-convert-annotations.py
+# wget http://raw.githubusercontent.com/roryk/seqscripts/master/radar-convert-annotations.py
 # python radar-convert-annotations.py RADAR-hg19.bed conversions.bed RADAR-hg38.bed.gz
 
 ---
@@ -27,7 +27,7 @@ recipe:
     recipe_type: bash
     recipe_cmds:
       - |
-        url=https://s3.amazonaws.com/biodata/annotation/RADAR/hg38/RADAR.bed.gz
+        url=http://s3.amazonaws.com/biodata/annotation/RADAR/hg38/RADAR.bed.gz
         mkdir -p editing
         cd editing
         wget --no-check-certificate -q $url

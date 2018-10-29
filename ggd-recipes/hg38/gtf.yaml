@@ -1,6 +1,6 @@
 # Ensembl GTF file distributed by Ensembl for hg38
 # Cleans GTF file by converting chromosome names to standard names
-# Uses https://github.com/dpryan79/ChromosomeMappings to remap the chromosome names
+# Uses http://github.com/dpryan79/ChromosomeMappings to remap the chromosome names
 ---
 attributes:
   name: gtf

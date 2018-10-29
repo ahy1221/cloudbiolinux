@@ -1,6 +1,6 @@
 # Virus reference genomes, prepared for bwa alignment
 # Taken from TCGA GDC reference genome
-# https://gdc.cancer.gov/about-data/data-harmonization-and-generation/gdc-reference-files
+# http://gdc.cancer.gov/about-data/data-harmonization-and-generation/gdc-reference-files
 ---
 attributes:
   name: viral

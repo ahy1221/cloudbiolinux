@@ -13,10 +13,10 @@ recipe:
         bcbio_githash=ae0bde8ef254ce4320d9a35b19f7c3b1cef6665a
         mkdir -p config/vcfanno
         cd config/vcfanno
-        gemini_baseurl=https://github.com/brentp/vcfanno/raw/$vcfanno_githash/example
+        gemini_baseurl=http://github.com/brentp/vcfanno/raw/$vcfanno_githash/example
         wget --no-check-certificate -O gemini.lua -c $gemini_baseurl/custom.lua
         wget --no-check-certificate -O gemini.conf -c $gemini_baseurl/gem.conf
-        bcbio_baseurl=https://github.com/chapmanb/bcbio-nextgen/raw/$bcbio_githash/config/vcfanno
+        bcbio_baseurl=http://github.com/chapmanb/bcbio-nextgen/raw/$bcbio_githash/config/vcfanno
         wget --no-check-certificate -O rnaedit.conf -c $bcbio_baseurl/rnaedit.conf
         wget --no-check-certificate -O rnaedit.lua -c $bcbio_baseurl/rnaedit.lua
         wget --no-check-certificate -O dbnsfp.conf -c $bcbio_baseurl/GRCh37-dbnsfp.conf

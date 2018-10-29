@@ -1,6 +1,6 @@
 # ClinVar: http://www.clinvar.com/
 #
-# UCSFify name sed magic from: https://github.com/mmarchin/utilities/blob/master/ucscify.sh
+# UCSFify name sed magic from: http://github.com/mmarchin/utilities/blob/master/ucscify.sh
 ---
 attributes:
   name: clinvar

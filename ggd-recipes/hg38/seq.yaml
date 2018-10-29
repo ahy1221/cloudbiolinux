@@ -19,7 +19,7 @@ recipe:
           [[ -f seq/$new$suffix ]] || wget -c -O seq/$new$suffix $url/$base$suffix
         done
         # gzipped references for use with ensembl-vep HGVS
-        urlgz=https://s3.amazonaws.com/biodata/hg38_bundle
+        urlgz=http://s3.amazonaws.com/biodata/hg38_bundle
         for suffix in .fa.gz .fa.gz.fai .fa.gz.gzi
         do
           [[ -f seq/$new$suffix ]] || wget --no-check-certificate -c -O seq/$new$suffix $urlgz/$new$suffix

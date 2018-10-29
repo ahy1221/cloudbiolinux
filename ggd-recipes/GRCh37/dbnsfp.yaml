@@ -10,7 +10,7 @@ recipe:
         # Uses Google Drive for faster download with tricks from
         # http://stackoverflow.com/a/38937732/252589
         ggID='0B60wROKy6OqcRmZLbWd4SW5Yc1U'
-        ggURL='https://drive.google.com/uc?export=download'
+        ggURL='http://drive.google.com/uc?export=download'
         mkdir -p variation
         cd variation
         filename="$(curl -k -sc tmp-gcokie "${ggURL}&id=${ggID}" | grep -o '="uc-name.*</span>' | sed 's/.*">//;s/<.a> .*//')"

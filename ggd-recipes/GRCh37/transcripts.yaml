@@ -1,6 +1,6 @@
 # Transcript, annotation and indices for RNA-seq analysis
 # Prepared from Ensembl transcripts using: 
-# https://github.com/chapmanb/cloudbiolinux/blob/master/utils/prepare_tx_gff.py
+# http://github.com/chapmanb/cloudbiolinux/blob/master/utils/prepare_tx_gff.py
 ---
 attributes:
   name: transcripts

@@ -1,9 +1,9 @@
 # 1000 genomes phase 1 indel calls
 #
 # From the Broad v2.8 resource bundle
-# https://www.broadinstitute.org/gatk/guide/article.php?id=1213
+# http://www.broadinstitute.org/gatk/guide/article.php?id=1213
 # lifted over to hg38 coordinates by Alison Meynert
-# https://github.com/chapmanb/bcbio-nextgen/issues/817
+# http://github.com/chapmanb/bcbio-nextgen/issues/817
 ---
 attributes:
   name: 1000g_indels
@@ -13,7 +13,7 @@ recipe:
     recipe_type: bash
     recipe_cmds:
       - |
-        url=https://s3.amazonaws.com/biodata/hg38_bundle
+        url=http://s3.amazonaws.com/biodata/hg38_bundle
         base=1000G_phase1.indels.b38.primary_assembly
         new=1000G_phase1.indels
         mkdir -p variation
